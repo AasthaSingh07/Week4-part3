@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        h2{
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        
+        .hlist{
+            margin-left: 500px;
+        }
+    </style>
+    <script src="lib/jquery-3.7.1.js"></script>
+    <script>
+     var tempdata = {};
+       $(()=>{
+            $.getJSON("data/bangalore.json", function(data, status, jqxhr){
+                tempdata = data;
+                Object.keys(data.places_in_bangalore).forEach(function (category) {
+                $(".hlist").append(`<option value="${category}">${category}</option>`);
+    
+                })
+            });
+            $(".hlist").on("change", function (evt) {
+                var selectedCategory = evt.target.value;
+                var places = tempdata.places_in_bangalore[selectedCategory];
+                // Assuming there's only one place in the selected category, update the HTML accordingly
+                var placesHTML = [];
+
+                // Iterate through places and create HTML for each place
+                for (var i = 0; i < places.length; i++) {
+                    var place = places[i];
+                    placesHTML.push(`
+                        <div class="card" style="width:50%">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Name: ${place.name} <br/>
+                                    Latitude: ${place.latitude} <br/>
+                                    Longitude: ${place.longitude} <br/>
+                                </p>
+                                <img src="${place.poster}" style="width:50%"> 
+                            </div>
+                        </div>
+                    `)
+                }
+                $(".box").html(placesHTML.join(''))
+            });
+        })
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Choose the place whose information you want to know</h2>
+        <select class="hlist">
+            <option>default</option>
+        </select>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

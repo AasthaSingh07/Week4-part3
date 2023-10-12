@@ -1,0 +1,40 @@
+{
+    "places_in_gujarat": {
+        "historical": [
+            {
+                "name": "Sabarmati Ashram",
+                "latitude": 23.0325,
+                "longitude": 72.5592
+            },
+            {
+                "name": "Rani Ki Vav",
+                "latitude": 23.8022,
+                "longitude": 72.6563
+            }
+        ],
+        "adventurous": [
+            {
+                "name": "Gir Forest National Park",
+                "latitude": 21.1587,
+                "longitude": 70.6235
+            },
+            {
+                "name": "Rann of Kutch",
+                "latitude": 23.8004,
+                "longitude": 70.4739
+            }
+        ],
+        "religious": [
+            {
+                "name": "Somnath Temple",
+                "latitude": 20.8845,
+                "longitude": 70.4057
+            },
+            {
+                "name": "Dwarkadhish Temple",
+                "latitude": 22.2445,
+                "longitude": 68.9683
+            }
+        ]
+    }
+}

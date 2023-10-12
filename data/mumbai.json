@@ -1,0 +1,40 @@
+{
+    "places_in_mumbai": {
+        "historical": [
+            {
+                "name": "Gateway of India",
+                "latitude": 18.9217,
+                "longitude": 72.8347
+            },
+            {
+                "name": "Chhatrapati Shivaji Maharaj Vastu Sangrahalaya",
+                "latitude": 18.9220,
+                "longitude": 72.8325
+            }
+        ],
+        "adventurous": [
+            {
+                "name": "EsselWorld",
+                "latitude": 19.2303,
+                "longitude": 72.8152
+            },
+            {
+                "name": "Sanjay Gandhi National Park",
+                "latitude": 19.2143,
+                "longitude": 72.9144
+            }
+        ],
+        "religious": [
+            {
+                "name": "Siddhivinayak Temple",
+                "latitude": 19.0270,
+                "longitude": 72.8536
+            },
+            {
+                "name": "Haji Ali Dargah",
+                "latitude": 18.9829,
+                "longitude": 72.8106
+            }
+        ]
+    }
+}

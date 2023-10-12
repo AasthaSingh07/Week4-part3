@@ -1,0 +1,46 @@
+{
+    "places_in_bangalore": {
+        "historical": [
+            {
+                "name": "Bangalore Palace",
+                "latitude": 12.9982,
+                "longitude": 77.5921,
+                "poster": "img/bp.png"
+            },
+            {
+                "name": "Tipu Sultan's Summer Palace",
+                "latitude": 12.9594,
+                "longitude": 77.5738,
+                "poster": "img/ts.png"
+            }
+        ],
+        "adventurous": [
+            {
+                "name": "Nandi Hills",
+                "latitude": 13.3705,
+                "longitude": 77.6846,
+                "poster": "img/nh.png"
+            },
+            {
+                "name": "Bannerghatta National Park",
+                "latitude": 12.8006,
+                "longitude": 77.5770,
+                "poster": "img/bnp.png"
+            }
+        ],
+        "religious": [
+            {
+                "name": "ISKCON Temple",
+                "latitude": 13.0109,
+                "longitude": 77.5511,
+                "poster": "img/ishkon.png"
+            },
+            {
+                "name": "Bull Temple",
+                "latitude": 12.9424,
+                "longitude": 77.5695,
+                "poster": "img/bt.png"
+            }
+        ]
+    }
+}
